@@ -1,2 +1,2 @@
 # WeatherApp
-Test task fir React Bootcamp 2021
+Test task for React Bootcamp 2021
