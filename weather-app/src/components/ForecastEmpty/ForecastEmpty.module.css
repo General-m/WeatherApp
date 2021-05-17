@@ -1,0 +1,22 @@
+.content__image {
+  display: flex;
+  align-self: center;
+  width: 16rem;
+  height: 16rem;
+  background-image: url("../../assets/Placeholder/Academy-Weather-bg160.svg");
+}
+
+.content {
+  margin-top: 6rem;
+  margin-bottom: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content__message {
+  margin-top: 2.4rem;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8083a4;
+}

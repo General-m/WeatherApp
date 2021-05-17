@@ -1,0 +1,11 @@
+.label__wrapper {
+  display: flex;
+}
+
+#picker {
+  color: blue;
+}
+
+datalist #picker {
+  display: inline-block;
+}
