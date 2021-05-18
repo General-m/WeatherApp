@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-top: 5.4rem;
+  margin-bottom: 7rem;
+  padding: 0 2.4rem;
+}
+
+.leftArrow {
+  width: 2.4rem;
+  height: 2.4rem;
+
+  opacity: 0.4;
+  color: #8083a4;
+  background-color: #fff;
+
+  background-image: url("../../assets/icons/24/chevron-left.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rightArrow {
+  width: 2.4rem;
+  height: 2.4rem;
+
+  opacity: 0.4;
+  color: #8083a4;
+  background-color: #fff;
+
+  background-image: url("../../assets/icons/24/chevron-left-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

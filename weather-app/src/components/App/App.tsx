@@ -1,6 +1,6 @@
 import Footer from "../Footer/Footer";
 import ForecastPast from "../ForecastPast/ForecastPast";
-import ForecastPresent from "../ForecastPresent/ForecatPresent";
+import ForecastPresent from "../ForecastPresent/ForecastPresent";
 import Header from "../Header/Header";
 import classes from "./App.module.css";
 

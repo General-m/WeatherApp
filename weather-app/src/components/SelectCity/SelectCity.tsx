@@ -1,11 +1,9 @@
 import React from 'react';
-import classes from './SelectCity.module.css'
+import classes from './SelectCity.module.css';
+import { cities } from '../../consts/cities';
 
 const SelectCity: React.FC = () => {
 
-  // const options = texts.map((text, index) => {
-  // 	return <option key={index}>{text}</option>;
-  // });
   return (
     <div className={classes.label__wrapper}>
       <form >
@@ -14,12 +12,14 @@ const SelectCity: React.FC = () => {
           list="lst"
         />
         <datalist id="lst">
-          <option >Krasnodar</option>
-          <option >Samara</option>
-          <option >Saratov</option>
+          {
+            cities.map(item => (
+              <option key={item.lat} value={item.name}></option>
+            )
+
+            )
+          }
         </datalist>
-
-
       </form>
     </div >
   )
