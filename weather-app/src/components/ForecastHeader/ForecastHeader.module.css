@@ -1,0 +1,19 @@
+.forecast__header {
+  padding: 0 5.8rem;
+}
+
+.forecast__title {
+  margin-top: 5rem;
+
+  text-align: left;
+  color: #2c2d76;
+  font-size: 3.2rem;
+  line-height: 32px;
+}
+
+.select {
+  margin-top: 3.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

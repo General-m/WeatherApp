@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import Context from "../Context";
 import Cards from '../Cards/Cards';
+import ForecastHeader from '../ForecastHeader/ForecastHeader';
 import SelectCity from '../SelectCity/SelectCity';
 import classes from './Forecast.module.css';
 
@@ -7,26 +9,30 @@ import classes from './Forecast.module.css';
 
 const ForecastPresent: React.FC = () => {
 
+  const myCallback = (selectCity: string) => {
+    console.log(selectCity);
+  }
+  const [context, setContext] = useState();
+  // return (
+  //   <Context.Provider value={[context, setContext]}>
+  //     <ComponentA />
+  //     <ComponentB />
+  //   </Context.Provider>
+
+  const value = {
+    context,
+    setContext
+  }
+
   return (
-    <article className={classes.forecast}>
-      <section className={classes.forecast__header}>
-        <h2 className={classes.forecast__title}>
-          7 Days Forecast</h2>
-        <div className={classes.select}>
-          <SelectCity />
-        </div>
-      </section>
-      <Cards />
-      {/* <section className={classes.forecast__content}>
-
+    <Context.Provider value={value}>
+      <article className={classes.forecast}>
+        <ForecastHeader />
         <Cards />
+      </article>
 
+    </Context.Provider>
 
-      </section> */}
-
-
-
-    </article>
   )
 }
 

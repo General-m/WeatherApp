@@ -1,23 +1,28 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import classes from './SelectCity.module.css';
 import { cities } from '../../consts/cities';
+import Context from '../Context';
 
 const SelectCity: React.FC = () => {
+  const value = useContext(Context);
+  const citiesList = Object.keys(cities);
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    value.setContext(event.target.value);
+  };
 
   return (
     <div className={classes.label__wrapper}>
       <form >
-        <input
+        <input onChange={(event: React.ChangeEvent<HTMLInputElement>): void => handleChange(event)}
           placeholder='Select city'
           list="lst"
         />
         <datalist id="lst">
           {
-            cities.map(item => (
-              <option key={item.lat} value={item.name}></option>
-            )
-
-            )
+            citiesList.map((item, index) => (
+              <option key={index} value={item} ></option>
+            ))
           }
         </datalist>
       </form>
