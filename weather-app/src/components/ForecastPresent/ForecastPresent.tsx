@@ -9,16 +9,7 @@ import classes from './Forecast.module.css';
 
 const ForecastPresent: React.FC = () => {
 
-  const myCallback = (selectCity: string) => {
-    console.log(selectCity);
-  }
-  const [context, setContext] = useState();
-  // return (
-  //   <Context.Provider value={[context, setContext]}>
-  //     <ComponentA />
-  //     <ComponentB />
-  //   </Context.Provider>
-
+  const [context, setContext] = useState<string>();
   const value = {
     context,
     setContext
@@ -32,7 +23,6 @@ const ForecastPresent: React.FC = () => {
       </article>
 
     </Context.Provider>
-
   )
 }
 
