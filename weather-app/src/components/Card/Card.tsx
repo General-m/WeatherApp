@@ -2,23 +2,28 @@ import classes from './Card.module.css';
 import React, { useEffect, useState } from 'react';
 
 
-interface SelectCityState {
-  myValue: number,
+type Props = {
+  forecast: Weather
 }
-const Card: React.FC<SelectCityState> = (props: SelectCityState) => {
+
+type Weather = {
+  date: number,
+  icon: string,
+  temp: number
+}
+
+const Card: React.FC<Props> = ({ forecast }) => {
 
   return (
     <div className={classes.card}>
-      <div>17 ctynz 2021</div>
-      <div>cloud</div>
-      <div>{props.myValue}</div>
-      {/* <div>{temperature}°</div>
-      <img width='30px' height='30px' src={weatherIcon} alt="cloud" />
-      <div>
-        {weatherDate.getDay()}
-        {weatherDate.getMonth()}
-        {weatherDate.getFullYear()}
-      </div> */}
+      <div>{new Date(forecast.date).getFullYear() + ' ' + new Date(forecast.date).getDate()
+        + ' ' + new Date(forecast.date).getMonth()}</div>
+      <div className={classes.card__image}>
+        <img width='60px' height='60px' src={forecast.icon} alt='cloud'></img>
+      </div>
+
+      <div>{forecast.temp}°</div>
+
     </div>
   )
 }
