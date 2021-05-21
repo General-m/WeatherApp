@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 import classes from './SelectCity.module.css';
-import { cities } from '../../consts/cities';
+import { CITIES } from '../../consts/cities';
 import Context from '../Context';
 
 const SelectCity: React.FC = () => {
   const value = useContext(Context);
-  const citiesList = Object.keys(cities);
+  const citiesList = Object.keys(CITIES);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     value.setContext(event.target.value);

@@ -8,4 +8,5 @@ const Context = createContext<GlobalContent>({
   context: "",
   setContext: () => {},
 });
+
 export default Context;

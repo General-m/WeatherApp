@@ -1,4 +1,4 @@
-import classes from './Card.module.css';
+import classes from './WeatherCard.module.css';
 import React, { useEffect, useState } from 'react';
 
 

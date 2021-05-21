@@ -1,15 +1,17 @@
 import React from 'react';
 import classes from './ForecastHeader.module.css';
-import SelectCity from '../SelectCity/SelectCity'
+import SelectCity from '../SelectCity/SelectCity';
 
-export default function ForecastHeader() {
+type Props = {
+  title: string
+}
+
+const ForecastHeader: React.FC<Props> = ({ title }) => {
   return (
-    <section className={classes.forecast__header}>
-      <h2 className={classes.forecast__title}>
-        7 Days Forecast</h2>
-      <div className={classes.select}>
-        <SelectCity />
-      </div>
-    </section>
+    <h2 className={classes.forecast__title}>
+      {title}</h2>
+
   )
 }
+
+export default ForecastHeader;
