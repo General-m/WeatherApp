@@ -9,3 +9,23 @@
 datalist #picker {
   display: inline-block;
 }
+
+.input__city {
+  caret-color: transparent;
+  /* color: transparent; */
+  /* text-shadow: 0 0 0 black; */
+  height: 48px;
+  width: 252px;
+
+  background: rgba(128, 131, 164, 0.06);
+
+  border: 2px solid rgba(128, 131, 164, 0.2);
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.input__city :active {
+  border: 2px solid #373af5 !important;
+}

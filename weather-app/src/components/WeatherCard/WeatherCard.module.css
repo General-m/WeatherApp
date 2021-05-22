@@ -1,6 +1,7 @@
 .card {
   width: 17.4rem;
   height: 23.8rem;
+  user-select: none;
 
   background: #373af5;
   border: 2px solid #373af5;
@@ -8,6 +9,9 @@
   box-shadow: 0px 4px 4px rgba(4, 5, 73, 0.25),
     14px 14px 20px rgba(5, 6, 114, 0.2);
   border-radius: 8px;
+
+  /* transition: all 1s linear;
+  transition-delay: 550ms; */
 }
 
 .card__image {

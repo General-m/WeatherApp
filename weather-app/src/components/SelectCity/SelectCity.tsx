@@ -14,7 +14,8 @@ const SelectCity: React.FC = () => {
   return (
     <div className={classes.label__wrapper}>
       <form >
-        <input onChange={(event: React.ChangeEvent<HTMLInputElement>): void => handleChange(event)}
+        <input className={classes.input__city}
+          onChange={(event: React.ChangeEvent<HTMLInputElement>): void => handleChange(event)}
           placeholder='Select city'
           list="lst"
         />

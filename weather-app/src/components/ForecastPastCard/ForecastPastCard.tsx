@@ -33,7 +33,6 @@ const ForecastPastCard: React.FC = () => {
 
   return isforecastGet ? (
     <section className={classes.container}>
-      <div className={classes.leftArrow}></div>
       {
         <WeatherCard forecast={
           {
@@ -42,7 +41,6 @@ const ForecastPastCard: React.FC = () => {
             temp: temperature
           }} />
       }
-      <div className={classes.rightArrow}></div>
     </section>
   ) :
     (

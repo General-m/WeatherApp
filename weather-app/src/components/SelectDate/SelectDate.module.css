@@ -1,6 +1,6 @@
 .select {
   display: flex;
-  color: #8083a4;
+  /* color: #8083a4; */
 }
 
 input[type="date"]:before {
@@ -11,4 +11,20 @@ input[type="date"]:before {
 input[type="date"]:focus:before,
 input[type="date"]:valid:before {
   content: "";
+}
+
+.input__date {
+  height: 48px;
+  width: 252px;
+  font-size: 16px;
+  line-height: 24px;
+
+  border-radius: 8px;
+  background: rgba(128, 131, 164, 0.06, 0.06);
+  border: 2px solid rgba(128, 131, 164, 0.2);
+  box-sizing: border-box;
+}
+
+.input__date :hover {
+  border: 2px solid #373af5;
 }

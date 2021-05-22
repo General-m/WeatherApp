@@ -12,8 +12,10 @@ const SelectDate: React.FC = () => {
 
   return (
     <div className={classes.select}>
-      <input type="date"
+      <input className={classes.input__date} type="date"
         placeholder="Select date"
+
+
         onChange={(event: React.ChangeEvent<HTMLInputElement>): void => handleChange(event)} />
 
     </div>
