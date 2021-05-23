@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Context from "../Context";
 import ForecastHeader from '../ForecastHeader/ForecastHeader';
 import SelectCity from '../SelectCity/SelectCity';
-import classes from './Forecast.module.css';
+import classes from './ForecastPresent.module.css';
 import ForecastNextCard from '../ForecastNextCard/ForecastNextCard';
 
 

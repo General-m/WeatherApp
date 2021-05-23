@@ -34,7 +34,7 @@ const ForecastPastCard: React.FC = () => {
   return isforecastGet ? (
     <section className={classes.container}>
       {
-        <WeatherCard forecast={
+        <WeatherCard style={{ width: " 54.4rem" }} forecast={
           {
             date: weatherDate,
             icon: weatherIcon,
