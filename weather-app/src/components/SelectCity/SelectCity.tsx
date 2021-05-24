@@ -13,7 +13,6 @@ const SelectCity: React.FC = () => {
 
   return (
     <div className={classes.label__wrapper}>
-      {/* <form className={classes.form__input} > */}
       <label className={classes.form__input}>
         <input className={classes.input__city}
           type="text"
@@ -30,7 +29,6 @@ const SelectCity: React.FC = () => {
           ))
         }
       </datalist>
-      {/* </form> */}
     </div >
   )
 }

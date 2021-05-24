@@ -14,7 +14,6 @@ type Weather = {
 }
 
 const Card: React.FC<Props> = ({ forecast, style }) => {
-
   const getDate = () => {
     return (
       new Date(forecast.date).getDate()

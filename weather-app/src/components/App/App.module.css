@@ -1,13 +1,8 @@
 .container {
   --assent: #373af5;
-
   text-align: center;
-
   width: 100%;
-
-  /* height: 100%; */
   background-color: var(--assent);
-
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../../assets/Background/Academy-Weather\ forecast-Bg-up.png"),
@@ -22,7 +17,6 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* padding: 0 10px; */
   padding: 60px 0;
 }
 
