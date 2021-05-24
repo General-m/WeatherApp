@@ -1,7 +1,7 @@
 .card {
-  width: 17.4rem;
-  height: 23.8rem;
-  padding: 2rem;
+  width: 174px;
+  height: 238px;
+  padding: 20px;
   user-select: none;
 
   display: flex;
@@ -20,7 +20,9 @@
 }
 
 .card__fullWidth {
-  width: 54.4rem;
+  width: 100%;
+  width: 252px;
+  margin: 0 -48px;
 }
 
 .card__date {
@@ -30,8 +32,8 @@
 }
 
 .card__image {
-  width: 12rem;
-  height: 12rem;
+  width: 12px;
+  height: 12px;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -2,8 +2,9 @@
   --assent: #373af5;
 
   text-align: center;
+
   width: 100%;
-  overflow: auto;
+
   /* height: 100%; */
   background-color: var(--assent);
 
@@ -21,20 +22,26 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 0 10px;
-  /* align-items: center; */
+  /* padding: 0 10px; */
+  padding: 60px 0;
 }
 
 @media screen and (max-width: 1280px) {
   .main {
+    width: 100%;
     flex-direction: column;
     align-items: center;
-    padding: 34px 0;
   }
   .container {
-    background-size: cover;
-    background-repeat: no-repeat;
     background-image: url("../../assets/Background/Academy-Weather\ forecast-Bg-up-1.png"),
       url("../../assets/Background/Academy-Weather\ forecast-Bg-buttom.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .main {
+    padding: 24px 10px 78px 10px;
   }
 }

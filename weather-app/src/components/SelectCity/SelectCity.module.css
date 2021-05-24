@@ -1,31 +1,49 @@
 .label__wrapper {
   display: flex;
 }
-
-#picker {
-  color: blue;
+.input__city::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 24px;
+  color: #8083a4;
+  font-family: "Ubuntu";
 }
 
-datalist #picker {
-  display: inline-block;
+input[type="text"] {
+  background: rgba(128, 131, 164, 0.06);
 }
 
 .input__city {
-  caret-color: transparent;
-  /* color: transparent; */
-  /* text-shadow: 0 0 0 black; */
+  cursor: pointer;
   height: 48px;
   width: 252px;
-
-  background: rgba(128, 131, 164, 0.06);
-
+  padding: 12px 16px;
+  color: rgba(128, 131, 164, 0, 2);
   border: 2px solid rgba(128, 131, 164, 0.2);
-  box-sizing: border-box;
   border-radius: 8px;
-  font-size: 16px;
-  line-height: 24px;
 }
 
-.input__city :active {
+.input__city:focus {
   border: 2px solid #373af5 !important;
+
+  background: rgba(128, 131, 164, 0.06);
+}
+
+.input__city::-webkit-calendar-picker-indicator {
+  /* content: "";
+  opacity: 1; */
+  background-image: url("../../assets/icons/16/chevron-bottom.svg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.input__city::-ms-expand {
+  padding: 2em;
+  color: red;
+  background: black;
+}
+
+@media screen and (max-width: 890px) {
+  .input__city {
+    margin-bottom: 24px;
+  }
 }

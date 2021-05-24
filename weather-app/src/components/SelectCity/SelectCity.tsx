@@ -13,20 +13,24 @@ const SelectCity: React.FC = () => {
 
   return (
     <div className={classes.label__wrapper}>
-      <form >
+      {/* <form className={classes.form__input} > */}
+      <label className={classes.form__input}>
         <input className={classes.input__city}
+          type="text"
           onChange={(event: React.ChangeEvent<HTMLInputElement>): void => handleChange(event)}
           placeholder='Select city'
           list="lst"
         />
-        <datalist id="lst">
-          {
-            citiesList.map((item, index) => (
-              <option key={index} value={item} ></option>
-            ))
-          }
-        </datalist>
-      </form>
+      </label>
+
+      <datalist id="lst">
+        {
+          citiesList.map((item, index) => (
+            <option key={index} value={item} ></option>
+          ))
+        }
+      </datalist>
+      {/* </form> */}
     </div >
   )
 }

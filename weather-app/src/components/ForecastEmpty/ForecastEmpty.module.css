@@ -1,8 +1,8 @@
 .content__image {
   display: flex;
   align-self: center;
-  width: 16rem;
-  height: 16rem;
+  width: 160px;
+  height: 160px;
   background-image: url("../../assets/Placeholder/Academy-Weather-bg160.svg");
 }
 

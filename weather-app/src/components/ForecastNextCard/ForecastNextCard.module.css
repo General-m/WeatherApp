@@ -4,9 +4,8 @@
   justify-content: space-around;
   align-items: center;
 
-  margin-top: 5.4rem;
   margin-bottom: 7rem;
-  padding: 0 2.4rem;
+  margin: 54px -48px 0 -48px;
 }
 
 .slider {
@@ -27,4 +26,11 @@
 
 .slider-disabled {
   opacity: 0.4;
+}
+
+@media screen and (max-width: 890px) {
+  .forecast {
+    min-height: 464px;
+    margin-top: 30px;
+  }
 }
