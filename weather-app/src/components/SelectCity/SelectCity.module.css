@@ -22,16 +22,6 @@ input[type="text"] {
   border-radius: 8px;
 }
 
-.input__city:focus {
-  border: 2px solid #373af5 !important;
-
-  background: rgba(128, 131, 164, 0.06);
-}
-
-input[type="text"]::-webkit-datetime-edit-fields-wrapper:active {
-  border: 2px solid #b93b89 !important;
-}
-
 .input__city::-webkit-calendar-picker-indicator {
   /* content: "";
   opacity: 1; */
